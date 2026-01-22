@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adaptive Registration</title>
+<style>
+body{font-family:Arial}
+input,select{display:block;margin:8px 0;padding:6px}
+.invalid{border:2px solid red}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<form id="regForm">
+<input id="name" placeholder="Name">
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+<input id="confirm" type="password" placeholder="Confirm Password">
+<input id="age" type="number" placeholder="Age">
+<select id="role">
+<option value="">Select Role</option>
+<option>Student</option>
+<option>Teacher</option>
+<option>Admin</option>
+</select>
+<input id="skills" class="hidden" placeholder="Skills">
+<button type="submit">Register</button>
+</form>
+<script>
+const form=document.getElementById("regForm")
+const role=document.getElementById("role")
+const skills=document.getElementById("skills")
+function mark(el,valid){el.className=valid?"":"invalid"}
+function passwordValid(p,r){return r==="Admin"?p.length>=10&&/[A-Z]/.test(p)&&/\d/.test(p):p.length>=6}
+role.onchange=()=>{skills.className=role.value==="Teacher"?"":"hidden"}
+form.oninput=()=>{
+mark(name,name.value.length>2)
+mark(email,email.value.includes("@")&&email.value.endsWith(".edu"))
+mark(password,passwordValid(password.value,role.value))
+mark(confirm,confirm.value===password.value)
+mark(age,age.value>17)
+}
+form.onsubmit=e=>{
+e.preventDefault()
+if([...form.querySelectorAll(".invalid")].length===0)alert("Registered")
+}
+</script>
+</body>
+</html>

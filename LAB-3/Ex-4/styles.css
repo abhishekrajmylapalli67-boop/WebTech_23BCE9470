@@ -1,0 +1,5 @@
+body{background:#020617;color:#e2e8f0;font-family:Courier;padding:20px}
+ul{max-height:300px;overflow:auto}
+li{margin:4px 0}
+#warn{color:#fb7185;font-weight:bold}
+button{margin-right:10px}

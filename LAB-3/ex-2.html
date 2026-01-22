@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+<style>
+body{font-family:Arial}
+</style>
+</head>
+<body>
+<input id="coupon" placeholder="Coupon Code">
+<div id="cart"></div>
+<h3 id="total"></h3>
+<script>
+let products=[
+{name:"Book",price:20,qty:1,cat:"edu"},
+{name:"Pen",price:5,qty:2,cat:"stat"}
+]
+function calc(){
+let sum=0
+products.forEach(p=>{
+let cost=p.price*p.qty
+if(p.qty>=5)cost*=0.9
+if(p.cat==="edu")cost*=0.95
+sum+=cost
+})
+let c=coupon.value.toUpperCase()
+if(c.startsWith("SAVE"))sum*=0.9
+total.innerText="Total: $"+sum.toFixed(2)
+render()
+}
+function render(){
+cart.innerHTML=""
+products.forEach((p,i)=>{
+let d=document.createElement("div")
+d.innerHTML=`${p.name} <input type="number" value="${p.qty}">`
+d.querySelector("input").oninput=e=>{p.qty=+e.target.value;calc()}
+cart.appendChild(d)
+})
+}
+coupon.oninput=calc
+calc()
+</script>
+</body>
+</html>

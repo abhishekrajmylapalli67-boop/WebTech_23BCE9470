@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Task Flow Board</header>
+    <div class="inputArea">
+        <input id="taskInput" placeholder="Enter Task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <div class="board">
+        <div class="column" ondrop="drop(event)" ondragover="allow(event)">
+            <h3>To Do</h3>
+        </div>
+        <div class="column" ondrop="drop(event)" ondragover="allow(event)">
+            <h3>In Progress</h3>
+        </div>
+        <div class="column complete" ondrop="drop(event)" ondragover="allow(event)">
+            <h3>Completed</h3>
+        </div>
+    </div>
+    <p id="msg"></p>
+    <script src="index.js"></script>
+</body>
+</html>

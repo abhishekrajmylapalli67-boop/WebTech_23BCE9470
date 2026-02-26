@@ -1,0 +1,36 @@
+body {
+    background:linear-gradient(to right,#8360c3,#2ebf91);
+    font-family:Calibri;
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.card {
+    background:white;
+    padding:40px;
+    width:800px;
+    border-radius:25px;
+}
+
+form {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+input,button {
+    padding:10px;
+}
+
+table {
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+}
+
+th,td {
+    border:1px solid #ccc;
+    padding:8px;
+    text-align:center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="card">
+        <h2>User Registration</h2>
+        <form id="form">
+            <input id="name" placeholder="Name" required>
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="mobile" placeholder="Mobile" required>
+            <input id="password" type="password" placeholder="Password" required>
+            <button>Register</button>
+        </form>
+        <button onclick="clearAll()">Clear All Users</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="users"></tbody>
+        </table>
+        <p id="msg"></p>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

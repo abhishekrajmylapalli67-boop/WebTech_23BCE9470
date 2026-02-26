@@ -1,0 +1,26 @@
+body {
+    margin:0;
+    font-family:Georgia;
+}
+
+header {
+    background:#6c5ce7;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+section {
+    padding:30px 80px;
+}
+
+.skills ul {
+    list-style:square;
+}
+
+footer {
+    background:#2d3436;
+    color:white;
+    text-align:center;
+    padding:20px;
+}

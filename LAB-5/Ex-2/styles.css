@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Georgia;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+}
+
+aside {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    font-size: 22px;
+}
+
+main {
+    padding: 40px;
+    background: #ecf0f1;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4,1fr) auto;
+    gap: 10px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+.card {
+    background: white;
+    margin-top: 20px;
+    padding: 15px;
+}

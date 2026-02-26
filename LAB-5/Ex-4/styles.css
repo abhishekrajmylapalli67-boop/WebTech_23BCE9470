@@ -1,0 +1,32 @@
+body {
+    background:#222;
+    color:white;
+    font-family:Tahoma;
+    display:flex;
+    justify-content:center;
+    padding:50px;
+}
+
+.box {
+    width:1000px;
+}
+
+input,button {
+    padding:8px;
+    margin:5px;
+}
+
+table {
+    width:100%;
+    margin-top:20px;
+    border-spacing:10px;
+}
+
+td {
+    background:#333;
+    padding:10px;
+}
+
+.low {
+    background:#8b0000;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee XML Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="panel">
+        <h1>Employee Records</h1>
+        <form id="empForm">
+            <input type="text" id="empId" placeholder="Employee ID" required>
+            <input type="text" id="empName" placeholder="Name" required>
+            <input type="text" id="empDept" placeholder="Department" required>
+            <input type="number" id="empSalary" placeholder="Salary" required>
+            <button type="submit">Save</button>
+        </form>
+        <div id="msg"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Dept</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="empTable"></tbody>
+        </table>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

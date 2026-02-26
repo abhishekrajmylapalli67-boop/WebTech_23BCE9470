@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory JSON</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Inventory</h2>
+        <input id="search" placeholder="Search by category">
+        <form id="productForm">
+            <input id="pid" placeholder="ID" required>
+            <input id="pname" placeholder="Name" required>
+            <input id="cat" placeholder="Category" required>
+            <input id="price" type="number" placeholder="Price" required>
+            <input id="stock" type="number" placeholder="Stock" required>
+            <button>Add</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="inventory"></tbody>
+        </table>
+        <div id="total"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

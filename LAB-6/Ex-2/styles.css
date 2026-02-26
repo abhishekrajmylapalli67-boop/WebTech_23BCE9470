@@ -1,0 +1,32 @@
+body {
+    margin:0;
+    background:linear-gradient(45deg,#1abc9c,#2ecc71);
+    font-family:Verdana;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.frame {
+    background:white;
+    width:850px;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+button {
+    padding:12px 25px;
+    border:none;
+    background:#2c3e50;
+    color:white;
+    cursor:pointer;
+}
+
+#screen {
+    margin-top:20px;
+    text-align:left;
+    white-space:pre-wrap;
+    font-family:Courier New;
+}

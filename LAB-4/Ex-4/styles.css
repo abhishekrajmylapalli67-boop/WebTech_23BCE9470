@@ -1,0 +1,29 @@
+body {
+    background: radial-gradient(circle, #00c6ff, #0072ff);
+    font-family: Georgia;
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px;
+}
+
+.weatherBox {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px 0 20px 0;
+    text-align: right;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0072ff;
+    color: white;
+    border: none;
+}

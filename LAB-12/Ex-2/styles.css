@@ -1,0 +1,16 @@
+body {
+background: #232526;
+background: linear-gradient(to right, #414345, #232526);
+font-family: Verdana;
+display: grid;
+place-items: center;
+height: 100vh;
+color: #fff;
+}
+
+.layout {
+background: #333;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}

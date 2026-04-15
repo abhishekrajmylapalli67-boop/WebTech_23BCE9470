@@ -1,0 +1,21 @@
+body {
+background: radial-gradient(circle, #43cea2, #185a9d);
+font-family: Tahoma;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color: #fff;
+}
+
+.wrapper {
+background: rgba(0,0,0,0.6);
+padding: 20px;
+border-radius: 12px;
+width: 280px;
+text-align: center;
+}
+
+h2 {
+margin-bottom: 15px;
+}

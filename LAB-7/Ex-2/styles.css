@@ -1,0 +1,21 @@
+body {
+background: #1e1e2f;
+color: #fff;
+font-family: Georgia;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.card {
+background: #2c2c54;
+padding: 30px;
+border-radius: 10px;
+width: 320px;
+text-align: left;
+}
+
+h1 {
+color: #f7b731;
+}

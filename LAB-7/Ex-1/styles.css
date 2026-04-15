@@ -1,0 +1,21 @@
+body {
+background: linear-gradient(120deg, #f6d365, #fda085);
+font-family: Verdana;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.box {
+background: white;
+padding: 25px;
+border-radius: 15px;
+text-align: center;
+width: 300px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+color: #ff6f61;
+}

@@ -1,0 +1,15 @@
+body {
+background: radial-gradient(circle, #ff7e5f, #feb47b);
+font-family: Tahoma;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.wrap {
+background: white;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}

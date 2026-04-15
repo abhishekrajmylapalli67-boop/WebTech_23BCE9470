@@ -1,0 +1,16 @@
+body {
+background: #141e30;
+font-family: Verdana;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color: #fff;
+}
+
+.box {
+background: #243b55;
+padding: 25px;
+border-radius: 12px;
+text-align: center;
+}

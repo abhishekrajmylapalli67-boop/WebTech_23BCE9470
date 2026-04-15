@@ -1,0 +1,22 @@
+body {
+background: #222;
+font-family: Verdana;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.container {
+display: flex;
+gap: 15px;
+}
+
+.card {
+background: #00cec9;
+padding: 20px;
+border-radius: 10px;
+width: 180px;
+text-align: center;
+color: #000;
+}
